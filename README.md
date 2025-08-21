@@ -26,7 +26,23 @@ cd my-store
 npm install
 ```
 
-### 3. Run the development server
+### 3. Environment Variables
+
+Create a `.env.local` file at the root:
+
+```
+NEXTAUTH_SECRET=your-secret-key
+NEXTAUTH_URL=http://localhost:3000
+```
+
+> If using Google login or other providers, add their credentials here:
+
+```
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+```
+
+### 4. Run the development server
 
 ```bash
 npm run dev

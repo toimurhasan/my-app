@@ -23,6 +23,8 @@ const handler = NextAuth({
     }),
   ],
 
+  secret: process.env.NEXTAUTH_SECRET, // ← Add this
+
   callbacks: {
     async redirect({ baseUrl }) {
       // Always redirect to products after login
